@@ -13,6 +13,7 @@ import {
 
 const ESPERA_DIGITACAO = 300;
 
+
 @Component({
   selector: 'app-acoes',
   templateUrl: './acoes.component.html',
