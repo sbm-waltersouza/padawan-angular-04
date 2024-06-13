@@ -13,6 +13,8 @@ C:\Users\wszin\OneDrive\Área de Trabalho\padawan-angular-04\byte-bank-broker/no
 /node_modules
 /node_modules
 api/node_modules
+
+
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
