@@ -11,7 +11,16 @@ import { Subscription } from 'rxjs';
 })
 export class AcoesComponent {
   acoesInput = new FormControl();
-  acoes$ = this.acoesService.getAcoes();
+  todasAcoes$ = this.acoesService.getAcoes().pipe(
+    tap(() => {
+      console.log('Fluxo Inicial');
+    })
+  );
 
+
+
+
+
+  
   constructor(private acoesService: AcoesService) {}
 }
