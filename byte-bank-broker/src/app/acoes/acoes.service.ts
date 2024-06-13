@@ -9,7 +9,8 @@ import { Acao, AcoesAPI } from './modelo/acoes';
 export class AcoesService {
   constructor(private httpClient: HttpClient) {}
 
-  getAcoes() {
+  getAcoes(valor?: string) {
+    const params = valor ? new HttpParams().append('valor', valor) : undefined;
     return this.httpClient.get<AcoesAPI>('http://localhost:3000/acoes').pipe(
       tap((valor) => console.log(valor)),
       pluck('payload'),
